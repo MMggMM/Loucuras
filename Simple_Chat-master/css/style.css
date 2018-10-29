@@ -1,0 +1,158 @@
+body{
+    background-color: #213F5B !important;
+}
+#top_menu{
+    background-color: rgb(23, 23, 23); /*#213F5B*/
+}
+#top_menu a img{
+    height: 56px;
+    width: auto;
+}
+#top_menu a{
+    color:white !important;
+}
+@media only screen and (min-width: 601px) {
+    #top_menu a img{
+        height: 64px;
+        width: auto;
+    }
+}
+
+#chat{
+    border:4px solid black;
+    overflow-x: hidden;
+}
+/*.chat_box span{
+    background-color: #213F5B !important;
+    max-width: 80%;
+    display: inline-block;
+    padding:10px;
+    margin:2px;
+    border-radius: 20px;
+    color:white;
+}
+.chat_box span b{
+    font-size: 8pt;
+}
+.chat_box i{
+    font-size: 8pt;
+}*/
+
+.chat_box_r {
+    position: relative;
+    background-color: #213F5B !important;
+    border-radius: .4em;
+    max-width: 80%;
+    width: auto !important;
+    display: inline-block !important;
+    padding:10px;
+    margin:2px !important;
+    color:white;
+    margin-left:calc(100% - 80% - 24px) !important;
+}
+
+.chat_box_r:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 24px solid transparent;
+    border-left-color: #213F5B;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -12px;
+    margin-right: -24px;
+}
+.chat_box_l {
+    position: relative;
+    background-color: #213F5B !important;
+    border-radius: .4em;
+    max-width: 80%;
+    width: auto !important;
+    display: inline-block !important;
+    padding:10px;
+    margin:2px !important;
+    color:white;
+    margin-left:1% !important;
+}
+
+.chat_box_l:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 24px solid transparent;
+    border-right-color: #213F5B;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -12px;
+    margin-left: -24px;
+}
+
+*:focus{
+    outline: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius:10px;
+}
+
+#chat{
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+a{
+    color:black !important;
+}
+
+    /* label color */
+.input-field label {
+ color: black;
+}
+/* label focus color */
+.input-field input:focus + label, .input-field textarea:focus + label  {
+ color: white !important;
+}
+
+.input-field input, .input-field textarea{
+ border-bottom: 1px solid white !important;
+ box-shadow: 0 1px 0 0 white !important;
+ color:white;
+}
+/* label underline focus color */
+.input-field input:focus , .input-field textarea:focus{
+ border-bottom: 1px solid white !important;
+ box-shadow: 0 1px 0 0 white !important;
+ color:white;
+}
+/* valid color */
+.input-field input.valid , .input-field textarea.valid{
+ border-bottom: 1px solid #000 !important;
+ box-shadow: 0 1px 0 0 #000 !important;
+}
+/* invalid color */
+.input-field input.invalid , .input-field textarea.invalid{
+ border-bottom: 1px solid #000 !important;
+ box-shadow: 0 1px 0 0 #000 !important;
+}
+/* icon prefix focus color */
+.input-field .prefix {
+ color: black !important;
+}
+.input-field .prefix.active {
+ color: white !important;
+}
