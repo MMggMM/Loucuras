@@ -1,0 +1,2 @@
+# Loucuras
+Coisas sem noção
